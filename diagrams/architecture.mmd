@@ -1,0 +1,9 @@
+flowchart TD
+    UserInput -->|text| Orchestrator
+    Orchestrator --> Retriever
+    Retriever --> KnowledgeBase
+    Retriever --> Orchestrator
+    Orchestrator --> AIModel
+    AIModel --> Evaluator
+    Evaluator --> Logs
+    Evaluator --> UserOutput
